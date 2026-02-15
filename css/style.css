@@ -1,0 +1,110 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:#0f2027;color:#fff;overflow-x:hidden}
+.container{width:90%;max-width:1200px;margin:auto}
+section{padding:90px 0}
+h2{text-align:center;margin-bottom:40px;font-size:32px}
+
+/* HEADER */
+header{background:rgba(0,0,0,.8);position:fixed;width:100%;z-index:1000}
+.header-inner{display:flex;justify-content:space-between;align-items:center;padding:15px 0}
+nav{display:flex;gap:25px}
+nav a{color:#fff;text-decoration:none}
+.menu-toggle{display:none;font-size:24px;cursor:pointer}
+
+/* HERO */
+.hero{height:100vh;background:url("https://images.unsplash.com/photo-1464226184884-fa280b87c399")center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;position:relative}
+.hero-overlay{position:absolute;width:100%;height:100%;background:linear-gradient(to right,rgba(0,0,0,.8),rgba(0,0,0,.4))}
+.hero-content{position:relative;z-index:1;max-width:700px}
+.hero h1{font-size:48px}
+.hero-buttons{margin-top:25px}
+.btn,.btn-outline{padding:12px 30px;border-radius:30px;text-decoration:none;margin:5px;display:inline-block}
+.btn{background:linear-gradient(45deg,#00ff88,#00c3ff);color:#000}
+.btn-outline{border:2px solid #00ff88;color:#00ff88}
+
+/* STATS */
+.stats{background:#111}
+.stats-wrapper{display:flex;justify-content:space-around;flex-wrap:wrap;text-align:center}
+.counter{font-size:40px;color:#00ff88}
+
+/* ABOUT */
+.about-wrapper{display:flex;gap:40px;align-items:center;flex-wrap:wrap}
+.about-img img{width:100%;border-radius:15px}
+
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card,.product-card{background:rgba(255,255,255,.08);padding:25px;border-radius:15px;text-align:center;transition:.3s}
+.card:hover,.product-card:hover{transform:translateY(-10px)}
+.card i{font-size:30px;margin-bottom:15px;color:#00ff88}
+.product-card img{width:100%;height:200px;object-fit:cover;border-radius:10px;margin-bottom:15px}
+
+/* PARALLAX */
+.parallax{background:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef")center/cover fixed;padding:120px 0;text-align:center;font-size:28px;font-weight:700}
+
+/* FAQ */
+.faq-item{max-width:600px;margin:15px auto}
+.faq-question{width:100%;padding:15px;border:none;background:#222;color:#fff;cursor:pointer}
+.faq-answer{max-height:0;overflow:hidden;transition:.4s;background:#333;padding:0 15px}
+.faq-answer.active{padding:15px;max-height:200px}
+
+/* FORM */
+form{max-width:500px;margin:auto;display:flex;flex-direction:column;gap:15px}
+input,textarea{padding:12px;border:none;border-radius:6px}
+button{padding:12px;border:none;background:#00ff88;border-radius:6px;font-weight:600}
+
+/* FOOTER */
+footer{background:#000;padding:40px 0}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:25px}
+
+/* FOOTER PREMIUM */
+footer {
+  background: #000;
+  padding: 60px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00ff88;
+}
+
+.footer-contact i {
+  margin-right: 8px;
+  color: #00ff88;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #222;
+  margin-top: 40px;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+
+
+}
+
+
+/* WHATSAPP */
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25d366;padding:15px;border-radius:50%;color:#fff;font-size:22px}
+
+/* MOBILE */
+@media(max-width:768px){
+nav{position:absolute;top:60px;right:0;background:#000;flex-direction:column;width:200px;padding:20px;display:none}
+nav.active{display:flex}
+.menu-toggle{display:block}
+.hero h1{font-size:28px}
+.about-wrapper{flex-direction:column}
+}
+
