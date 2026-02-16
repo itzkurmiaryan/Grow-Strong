@@ -1,0 +1,236 @@
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:Poppins,sans-serif;
+  background:#0f2027;
+  color:#fff;
+  overflow-x:hidden;
+}
+
+.container{width:90%;max-width:1200px;margin:auto}
+section{padding:90px 0}
+h2{text-align:center;margin-bottom:40px;font-size:32px}
+
+/* HEADER */
+header{
+  background:rgba(0,0,0,.8);
+  position:fixed;
+  width:100%;
+  z-index:1000;
+}
+.header-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 0;
+}
+nav{display:flex;gap:25px}
+nav a{color:#fff;text-decoration:none}
+.menu-toggle{display:none;font-size:24px;cursor:pointer}
+
+/* BUTTONS */
+.btn,.btn-outline{
+  padding:12px 30px;
+  border-radius:30px;
+  text-decoration:none;
+  margin:5px;
+  display:inline-block;
+}
+.btn{
+  background:linear-gradient(45deg,#00ff88,#00c3ff);
+  color:#000;
+}
+.btn-outline{
+  border:2px solid #00ff88;
+  color:#00ff88;
+}
+
+/* GRID UNIVERSAL */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.card,.product-card{
+  background:rgba(255,255,255,.08);
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+  transition:.3s;
+}
+.card:hover,.product-card:hover{
+  transform:translateY(-10px);
+}
+
+.card i{
+  font-size:30px;
+  margin-bottom:15px;
+  color:#00ff88;
+}
+
+.product-card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+
+/* FAQ */
+.faq-item{max-width:600px;margin:15px auto}
+.faq-question{
+  width:100%;
+  padding:15px;
+  border:none;
+  background:#222;
+  color:#fff;
+  cursor:pointer;
+}
+.faq-answer{
+  max-height:0;
+  overflow:hidden;
+  transition:.4s;
+  background:#333;
+  padding:0 15px;
+}
+.faq-answer.active{
+  padding:15px;
+  max-height:200px;
+}
+
+/* FOOTER */
+footer{
+  background:#000;
+  padding:60px 0 20px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:40px;
+}
+.footer-links a{
+  display:block;
+  color:#ccc;
+  text-decoration:none;
+  margin-bottom:8px;
+  transition:0.3s;
+}
+.footer-links a:hover{color:#00ff88}
+.footer-contact i{
+  margin-right:8px;
+  color:#00ff88;
+}
+.footer-bottom{
+  text-align:center;
+  border-top:1px solid #222;
+  margin-top:40px;
+  padding-top:20px;
+  font-size:14px;
+  color:#aaa;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  padding:15px;
+  border-radius:50%;
+  color:#fff;
+  font-size:22px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  nav{
+    position:absolute;
+    top:60px;
+    right:0;
+    background:#000;
+    flex-direction:column;
+    width:200px;
+    padding:20px;
+    display:none;
+  }
+  nav.active{display:flex}
+  .menu-toggle{display:block}
+  .about-wrapper{flex-direction:column}
+}
+
+/* LEGAL PAGE STYLING */
+
+.legal-page {
+  padding: 120px 20px 80px;
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  font-family: 'Poppins', sans-serif;
+}
+
+.legal-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.legal-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #1e1e1e;
+}
+
+.legal-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 60px;
+  font-size: 16px;
+}
+
+/* CARD STYLE */
+
+.legal-card {
+  background: #ffffff;
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+  border-left: 6px solid #198754;
+}
+
+.legal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+.legal-card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #198754;
+}
+
+.legal-card h4 {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.legal-card p {
+  margin-top: 8px;
+  line-height: 1.8;
+  color: #555;
+  font-size: 15px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .legal-card {
+    padding: 25px;
+  }
+
+  .legal-title {
+    font-size: 28px;
+  }
+}

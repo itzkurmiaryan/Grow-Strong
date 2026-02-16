@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Products | Grow Strong</title>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/products.css">
+<link rel="stylesheet" href="css/product-detail.css">
   <link rel="stylesheet" href="css/chatbot.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -28,28 +30,70 @@
     </div>
   </header>
 
-  <section>
-    <div class="container">
-      <h2>Our Product Catalog</h2>
-      <div class="grid">
 
-        <div class="product-card">
-          <img src="https://images.unsplash.com/photo-1598514983318-2f64f8f6d8e0">
-          <h3>Drip Irrigation</h3>
-          <p>Starting ₹2500</p>
-          <a href="product-detail.html?product=drip" class="btn">View Details</a>
-        </div>
 
-        <div class="product-card">
-          <img src="https://images.unsplash.com/photo-1581091012184-7c4a6cddf4c3">
-          <h3>HDPE Pipe</h3>
-          <p>Starting ₹120/m</p>
-          <a href="product-detail.html?product=hdpe" class="btn">View Details</a>
-        </div>
+<body>
 
+<section class="product-detail-section">
+  <div class="container product-detail-grid">
+
+    <!-- IMAGE -->
+    <div class="product-image">
+      <img src="https://images.unsplash.com/photo-1598514983318-2f64f8f6d8e0">
+    </div>
+
+    <!-- DETAILS -->
+    <div class="product-info">
+      <h1>Drip Irrigation System</h1>
+      <p class="price">Starting ₹2500</p>
+
+      <p class="description">
+        Our advanced drip irrigation system ensures efficient water usage,
+        improved crop yield and long-term durability for agricultural fields.
+      </p>
+
+      <div class="features">
+        <div><i class="fas fa-check-circle"></i> Water Saving Technology</div>
+        <div><i class="fas fa-check-circle"></i> Easy Installation</div>
+        <div><i class="fas fa-check-circle"></i> Long Lasting Material</div>
+        <div><i class="fas fa-check-circle"></i> Suitable for All Crops</div>
+      </div>
+
+      <a href="contact.html" class="enquiry-btn">Make Enquiry</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SPECIFICATIONS -->
+<section class="spec-section">
+  <div class="container">
+    <h2>Product Specifications</h2>
+
+    <div class="spec-grid">
+      <div class="spec-box">
+        <h4>Material</h4>
+        <p>High Quality Polyethylene</p>
+      </div>
+
+      <div class="spec-box">
+        <h4>Usage</h4>
+        <p>Agriculture & Farming</p>
+      </div>
+
+      <div class="spec-box">
+        <h4>Warranty</h4>
+        <p>1 Year</p>
+      </div>
+
+      <div class="spec-box">
+        <h4>Availability</h4>
+        <p>Pan India Delivery</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   <!-- CHATBOT -->
   <div class="chatbot-container">
 
@@ -112,5 +156,4 @@
   <script src="js/script.js"></script>
   <script src="js/chatbot.js"></script>
 </body>
-
 </html>
