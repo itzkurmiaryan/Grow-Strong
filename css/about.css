@@ -1,10 +1,12 @@
-/* ABOUT SECTION MAIN */
+/* ===============================
+   ABOUT SECTION
+================================ */
 .about-section{
   padding:120px 0 90px;
   background:linear-gradient(to bottom,#0f2027,#1c2f36);
 }
 
-/* HEADING STYLE */
+/* HEADING */
 .about-section h2{
   font-size:38px;
   font-weight:700;
@@ -36,7 +38,7 @@
   color:#ddd;
 }
 
-/* IMAGE SIDE */
+/* SMALL IMAGE SIDE */
 .about-img{
   flex:1;
   min-width:300px;
@@ -69,9 +71,11 @@
   color:#00ff88;
 }
 
-/* PARALLAX IMPROVED */
+/* ===============================
+   PARALLAX BIG IMAGE
+================================ */
 .parallax{
-  background:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef")center/cover fixed;
+  background:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef") center/cover fixed;
   padding:140px 0;
   text-align:center;
   font-size:32px;
@@ -99,14 +103,43 @@
   -webkit-text-fill-color:transparent;
 }
 
-/* RESPONSIVE */
+/* ===============================
+   RESPONSIVE DESIGN
+================================ */
+
+/* Tablet */
+@media(max-width:992px){
+  .about-section h2{
+    font-size:30px;
+  }
+
+  .about-wrapper{
+    gap:40px;
+  }
+}
+
+/* Mobile */
 @media(max-width:768px){
   .about-wrapper{
     flex-direction:column;
     text-align:center;
   }
 
+  .about-section{
+    padding:100px 0 60px;
+  }
+
   .about-section h2{
-    font-size:28px;
+    font-size:26px;
+  }
+
+  .about-text p{
+    font-size:15px;
+  }
+
+  .parallax{
+    font-size:22px;
+    padding:100px 0;
+    background-attachment:scroll;
   }
 }
